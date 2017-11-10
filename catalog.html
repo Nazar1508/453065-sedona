@@ -21,7 +21,55 @@
   	<main class="container">
   		<section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-  		<!-- Здесь будет форма -->
+  		    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                 <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                 <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <section>
+              <h2>Стоимость в сутки (Р):</h2>
+              <div class="cost">
+                <label for="cost-min">От</label>
+                <input type="text" name="cost-min" id="cost-min" placeholder="0">
+                <label for="cost-max">До</label>
+                <input type="text" name="cost-max" id="cost-max" placeholder="3000">
+              </div>
+              <div class="range">
+                <!-- Здесь будет ползунок -->
+              </div>
+              <button type="submit">Показать</button>
+            </section>
+          </form>
   		</section>
 
   		<section class="catalog">
@@ -85,8 +133,8 @@
   			<b>#VisitSedona</b>
   			<ul>
   				<li><a class="social-button" href="#">Twitter</a></li>
-          		<li><a class="social-button" href="#">Facebook</a></li>
-          		<li><a class="social-button" href="#">Youtube</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
   			</ul>
   		</div>
   		<p class="footer-copyright">
