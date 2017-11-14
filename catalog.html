@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Гостиницы</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="catalog-page">
 	<header class="main-header">
   		<nav class="main-navigation">
   			<a href="index.html" class="main-header-logo">
@@ -14,7 +17,7 @@
   				<li><a href="">Информация</a></li>
   				<li><a href="">Фото и видео</a></li>
   				<li><a href="">Карта штата</a></li>
-  				<li><a href="catalog.html">Гостиницы</a></li>
+  				<li class="active"><a href="catalog.html">Гостиницы</a></li>
   			</ul>  			
   		</nav> 		
   	</header>
@@ -59,10 +62,8 @@
             <section>
               <h2>Стоимость в сутки (Р):</h2>
               <div class="cost">
-                <label for="cost-min">От</label>
-                <input type="text" name="cost-min" id="cost-min" placeholder="0">
-                <label for="cost-max">До</label>
-                <input type="text" name="cost-max" id="cost-max" placeholder="3000">
+                <input type="text" name="cost-min" id="cost-min" placeholder="От 0">
+                <input type="text" name="cost-max" id="cost-max" placeholder="До 3000">
               </div>
               <div class="range">
                 <!-- Здесь будет ползунок -->
@@ -74,7 +75,7 @@
             <h3>Найдено: 3</h3>
             <span>Сортировка:</span>  
               <ul>
-                <li><a href="catalog.html">По цене</a></li>
+                <li class="active"><a href="catalog.html">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По рейтингу</a></li>
               </ul>
@@ -87,15 +88,15 @@
   				<li class="catalog-item">
   					<p class="catalog-item-image">
             	<img src="img/photo-3.jpg" width="135" height="90" alt="Фото">
-					</p>
+				    </p>
   					<h3>
-  						<a href="">Amara Resort & Spa</a>
+  						<a class="name" href="">Amara Resort & Spa</a>
   					</h3>
   					<span class="type-of-hotel">Гостиница</span>
   					<span class="price-of-hotel">От 4000 р.</span>
   					
   					<p>
-  						<a class="button" href="#">Подробнее</a>
+  						<a class="button detailed" href="#">Подробнее</a>
   						<a class="button" href="#">Забронировать</a>
   					</p>
   					<p class="hotel-rating">Рейтинг: 8,5</p>
@@ -106,13 +107,13 @@
               <img src="img/photo-4.jpg" width="135" height="90" alt="Фото">
 					</p>
   					<h3>
-  						<a href="">Desert Quail Inn</a>
+  						<a class="name" href="">Desert Quail Inn</a>
   					</h3>
   					<span class="type-of-hotel">Мотель</span>
   					<span class="price-of-hotel">От 3000 р.</span>
   					
   					<p>
-  						<a class="button" href="#">Подробнее</a>
+  						<a class="button detailed" href="#">Подробнее</a>
   						<a class="button" href="#">Забронировать</a>
   					</p>
   					<p class="hotel-rating">Рейтинг: 8,9</p>
@@ -123,13 +124,13 @@
               <img src="img/photo-5.jpg" width="135" height="90" alt="Фото">
 					</p>
   					<h3>
-  						<a href="">Villas at Poco Diablo</a>
+  						<a class="name" href="">Villas at Poco Diablo</a>
   					</h3>
   					<span class="type-of-hotel">Апартаменты</span>
   					<span class="price-of-hotel">От 2000 р.</span>
   					
   					<p>
-  						<a class="button" href="#">Подробнее</a>
+  						<a class="button detailed" href="#">Подробнее</a>
   						<a class="button" href="#">Забронировать</a>
   					</p>
   					<p class="hotel-rating">Рейтинг: 9,2</p>
