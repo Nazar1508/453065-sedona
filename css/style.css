@@ -390,7 +390,10 @@ a {
 	display: flex;
 }
 .search-results  li {
-     margin-right: 30px;
+    padding-right: 30px;
+}
+.search-results  li:last-child {
+    padding: 0;
 }
 .search-results h3,
 .catalog h3 {
@@ -413,6 +416,8 @@ a {
 .search-results ul,
 .catalog-list {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 .search-results a {
 	color: #cacaca;
@@ -430,6 +435,51 @@ a {
 .search-results .active a {
 	color: #81b3d2;
 	border: none;
+}
+.search-results,
+.catalog {
+	margin: 0;
+	padding 0;
+	padding-left: 73px;
+}
+.catalog {
+	padding-right: 73px;
+}
+.catalog-item {
+	display: flex;
+	margin-bottom: 60px;
+}
+.catalog-item img {
+	margin: 0;
+	padding: 0;
+	width: 135px;
+	height: auto;
+	padding-right: 30px;
+} 
+
+.catalog-wrapper h3 {
+	margin: 0;
+	padding: 0;
+}
+.catalog-wrapper span {
+	padding-right: 30px;
+}
+.catalog-wrapper .catalog-button  {
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+}
+.catalog-wrapper .button {
+	padding: 8px 15px;
+	margin-right: 6px;
+}
+.catalog-item .hotel-rating {
+	align-content: flex-end;
+	align-self: flex-end;
+	background-color: #f2f2f2;
+	margin: 0;
+	margin-left: auto;
+	padding: 6px 15px;
 }
 .catalog-item .name {
 	color: #000000;
