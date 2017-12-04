@@ -233,11 +233,11 @@ input[type="radio"].visually-hidden {
 .features-list .feature-item:first-child::before {
 	content: "";
 	position: absolute;
-    left: 112px;
-    top: 0px;
-    width: 75px;
-    height: 71px;
-    background-image: url(../img/icon-1.svg);
+  left: 112px;
+  top: 0px;
+  width: 75px;
+  height: 71px;
+  background-image: url(../img/icon-1.svg);
 }
 .features-list .feature-item:nth-child(2)::before {
 	content: "";
@@ -582,10 +582,10 @@ iframe {
   background-color: #81b3d2;
 }
 .footer-social li {
-	 margin-right: 6px;
+	margin-right: 6px;
 }
 .footer-social li:last-child {
-	 margin-right: 0;
+	margin-right: 0;
 }
 .social-button:hover,
 .social-button:focus {
@@ -712,6 +712,7 @@ iframe {
 	color: #ffffff;
 	text-transform: uppercase;
 	background-color: transparent;
+	cursor: pointer;
 }
 .catalog-page button:hover,
 .catalog-page button:focus {
@@ -769,11 +770,13 @@ iframe {
 	position: absolute;
 	top: -9px;
   left: -2px;
+  cursor: pointer;
 }
 .range-right {
 	position: absolute;
 	top: -9px;
   left: 250px;
+  cursor: pointer;
 }
 .range-left img:hover,
 .range-right img:hover {
